@@ -1,0 +1,10 @@
+<ng-container *ngFor="let question of questionService.questions; let iQ = index">
+    <div class="border question-box">
+        <div class="h5" [innerHTML]="question.question"></div>
+            <div class="border-left border-right border-top answer-box">
+                <div class="row" *ngFor="let answer of question.incorrect_answers; let iA=index">
+                    <button class="answer btn border-bottom btn-block" id="{{iQ}}{{iA}}" (click)="checkQuestion(iQ, iA)" [innerHTML]="answer" style="text-align: left"></button>
+                </div>
+            </div>
+    </div>
+</ng-container>

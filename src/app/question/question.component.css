@@ -1,0 +1,14 @@
+.question-box{
+    margin: 2% 10%;
+}
+.question-box>*{
+    margin: 1% 2%;
+}
+.answer-box{
+    overflow: hidden;
+}
+.answer{
+    margin-left: 1%;
+    color: grey;
+    background: white;
+}
